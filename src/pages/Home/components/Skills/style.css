@@ -1,0 +1,53 @@
+.card {
+  perspective: 1000px; /* Adiciona perspectiva para o efeito 3D */
+  position: relative;
+  width: 420px; /* Largura do card */
+  height: 330px; /* Altura do card */
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out; /* Suavidade do flip */
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg); /* Gira o card ao passar o mouse */
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Esconde o outro lado quando virado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Bordas arredondadas */
+  overflow: hidden; /* Evita que conteúdo transborde */
+}
+
+.cardFront {
+  z-index: 2; /* Garante que a frente esteja visível por padrão */
+}
+
+.cardBack {
+  background-color: rgba(0, 0, 0, 0.8); /* Estilo do lado traseiro */
+  transform: rotateY(180deg); /* Gira o lado traseiro inicialmente */
+  color: #fff; /* Texto branco para contraste */
+}
+
+.cardBack .link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cardBack .link:hover {
+  text-decoration: underline;
+}
