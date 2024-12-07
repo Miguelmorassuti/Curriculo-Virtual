@@ -1,0 +1,23 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.profilePhoto {
+  position: relative;
+  animation: mover-img 2s ease-in-out infinite alternate;
+}
+
+.icons {
+  font-size: 25px;
+}
+
+@keyframes mover-img {
+  0% {
+    top: -35px;
+  }
+  100% {
+    top: -70px;
+  }
+}
