@@ -1,0 +1,25 @@
+.aboutMeContainer {
+  background-color: #5d0e5c;
+  width: 80%;
+  padding: 8px;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.377);
+  margin-bottom: 150px;
+}
+
+.title {
+  color: rgb(188, 64, 230);
+  text-align: start;
+  font-weight: 900;
+}
+
+.subtitle {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: bold;
+}

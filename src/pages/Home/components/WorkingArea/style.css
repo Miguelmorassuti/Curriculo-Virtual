@@ -1,0 +1,35 @@
+.container {
+  background-color: #5d0e5c;
+  width: 100%;
+  margin-top: 16px;
+  padding: 24px 12px 100px 12px;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 50px;
+  font-weight: bold;
+  color: #1f051f;
+  margin: auto;
+}
+
+.activityCard {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 16px;
+  text-align: start;
+  max-width: 400px;
+}
+
+.activityCard:hover {
+  border-color: #1f051f;
+  box-shadow: 4px 8px #1f051f;
+}
