@@ -4,23 +4,13 @@ import "./style.css";
 
 const AboutMeBox = () => {
   return (
-    <Box className="aboutMeContainer">
+    <Box className="aboutMeContainer" id="aboutMe">
       <Grid2 container>
         <Grid2 size={{ xs: 12, md: 4 }}>
-          <img
-            src="src/assets/images/jovem_programando.webp"
-            alt=""
-            width="80%"
-          />
+          <img src="src/assets/images/jovem_programando.webp" width="80%" />
         </Grid2>
-
         <Grid2 size={{ xs: 12, md: 8 }}>
-          <Typography
-            variant="h3"
-            width="100%"
-            fontWeight="bold"
-            className="title"
-          >
+          <Typography variant="h3" fontWeight="bold" className="title">
             SOBRE MIM
           </Typography>
           <Typography variant="h5" color="white" textAlign="start">
@@ -35,7 +25,6 @@ const AboutMeBox = () => {
             </Typography>{" "}
             apaixonado por tecnologia e inovação.
           </Typography>
-
           <Typography variant="h6" color="white" textAlign="start">
             Sou Bacharel em Ciência da Computação, com mais de 2 anos de
             experiência profissional no setor de tecnologia e quase 5 anos de

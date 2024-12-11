@@ -11,15 +11,7 @@
 
 .title {
   color: rgb(188, 64, 230);
+  width: 100%;
   text-align: start;
-  font-weight: 900;
-}
-
-.subtitle {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  font-weight: bold;
+  padding-block: 16px;
 }

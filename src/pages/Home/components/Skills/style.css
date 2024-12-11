@@ -1,8 +1,15 @@
+.skillsContainer {
+  width: 100%;
+  padding: 36px 6px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
 .card {
-  perspective: 1000px; /* Adiciona perspectiva para o efeito 3D */
+  perspective: 1000px;
   position: relative;
-  width: 420px; /* Largura do card */
-  height: 330px; /* Altura do card */
+  width: 420px;
+  height: 330px;
 }
 
 .cardInner {
@@ -10,11 +17,11 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.6s ease-in-out; /* Suavidade do flip */
+  transition: transform 0.6s ease-in-out;
 }
 
 .card:hover .cardInner {
-  transform: rotateY(180deg); /* Gira o card ao passar o mouse */
+  transform: rotateY(180deg);
 }
 
 .cardFront,
@@ -22,23 +29,23 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Esconde o outro lado quando virado */
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 8px; /* Bordas arredondadas */
-  overflow: hidden; /* Evita que conteúdo transborde */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .cardFront {
-  z-index: 2; /* Garante que a frente esteja visível por padrão */
+  z-index: 2;
 }
 
 .cardBack {
-  background-color: rgba(0, 0, 0, 0.8); /* Estilo do lado traseiro */
-  transform: rotateY(180deg); /* Gira o lado traseiro inicialmente */
-  color: #fff; /* Texto branco para contraste */
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: rotateY(180deg);
+  color: #fff;
 }
 
 .cardBack .link {

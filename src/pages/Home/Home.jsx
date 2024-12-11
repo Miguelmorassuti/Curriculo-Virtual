@@ -1,46 +1,79 @@
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Grid2, Link, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import "./style.css";
-import { AboutMeBox, Skills, WorkingArea } from "./components";
+import { AboutMeBox, Skills, WorkingArea, Footer } from "./components";
 
-function Home() {
+const Home = () => {
+  const pdfUrl = "/curriculo.pdf";
+
   return (
-    <Box height="100%" width="100%">
-      <Box height="100vh" minHeight={900}>
-        <Grid2 container>
-          <Grid2 item size={4}>
-            <Typography color="white">Miguel Dev</Typography>
+    <Box width="100%">
+      <Box minHeight={900}>
+        <Grid2 container className="navigationContainer">
+          <Grid2 item size={{ xs: 6, md: 3 }}>
+            <Typography variant="h6" className="navigationButton" margin="auto">
+              MIGUEL DEV
+            </Typography>
           </Grid2>
-          <Grid2 item size={2}>
-            <Typography color="white">Sobre mim</Typography>
+          <Grid2 item size={{ xs: 6, md: 3 }}>
+            <Link href="#aboutMe" underline="none">
+              <Typography variant="h6" className="navigationButton">
+                SOBRE MIM
+              </Typography>
+            </Link>
           </Grid2>
-          <Grid2 item size={2}>
-            <Typography color="white">Áreas de atuação</Typography>
+          <Grid2 item size={{ xs: 6, md: 3 }}>
+            <Link href="#workingArea" underline="none">
+              <Typography variant="h6" className="navigationButton">
+                ÁREA DE ATUAÇÃO
+              </Typography>
+            </Link>
           </Grid2>
-          <Grid2 item size={2}>
-            <Typography color="white">Habilidades</Typography>
+          <Grid2 item size={{ xs: 6, md: 3 }}>
+            <Link href="skills" underline="none">
+              <Typography variant="h6" className="navigationButton">
+                HABILIDADES
+              </Typography>
+            </Link>
           </Grid2>
         </Grid2>
-
-        <Grid2 container marginTop={20} spacing={2}>
+        <Grid2 container marginTop={20} spacing={2} width={"100%"}>
           <Grid2 item size={{ md: 6, xs: 12 }}>
             <Typography variant="h4" color="white">
               Opa, tudo bem? Me chamo Miguel, seja bem-vindo ao meu currículo
               virtual!
             </Typography>
-            <Typography variant="h6" color="white">
+            <Typography variant="h6" color="white" mt={2}>
               Bacharel em Ciência da Computação pelo UNIVEM | Desenvolvedor Web
               Fullstack
             </Typography>
-            <Box display="flex" justifyContent="center" mt={2} gap={2}>
-              <Box color="#5d0e5c">
+            <Box mt={2}>
+              <Link
+                color="#5d0e5c"
+                href={pdfUrl}
+                target="_blank"
+                rel="noopener"
+              >
+                <Typography variant="h6">CURRÍCULO - PDF</Typography>
+              </Link>
+            </Box>
+            <Box display="flex" justifyContent="center" my={3} gap={2}>
+              <Link
+                href="https://www.linkedin.com/in/miguel-morassuti"
+                target="_blank"
+                color="#5d0e5c"
+              >
                 <LinkedInIcon fontSize="large" />
-              </Box>
-              <Box color="#5d0e5c">
+              </Link>
+              <Link
+                href="https://github.com/Miguelmorassuti"
+                target="_blank"
+                color="#5d0e5c"
+              >
                 <GitHubIcon fontSize="large" />
-              </Box>
+              </Link>
             </Box>
           </Grid2>
           <Grid2 item size={{ md: 6, xs: 12 }}>
@@ -56,8 +89,10 @@ function Home() {
       <WorkingArea />
 
       <Skills />
+
+      <Footer />
     </Box>
   );
-}
+};
 
 export default Home;

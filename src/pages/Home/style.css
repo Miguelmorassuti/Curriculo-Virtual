@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .profilePhoto {
   position: relative;
   animation: mover-img 2s ease-in-out infinite alternate;
@@ -11,6 +15,31 @@
 
 .icons {
   font-size: 25px;
+}
+
+.navigationButton {
+  transition: 1s;
+  width: 200px;
+  color: white;
+  margin: auto !important;
+}
+
+.navigationButton:hover {
+  background-color: #5d0e5c;
+  border-radius: 10px;
+}
+
+.navigationContainer {
+  background-color: #1f051f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-block: 16px;
+}
+
+.navigationContainer:hover > :not(:hover) {
+  opacity: 0.4;
+  transform: scale(0.9);
 }
 
 @keyframes mover-img {

@@ -7,13 +7,12 @@ import "./style.css";
 
 const WorkingArea = () => {
   return (
-    <Grid2 container className="container" columnGap={8}>
+    <Grid2 container className="container" columnGap={8} id="workingArea">
       <Grid2 size={12}>
-        <Typography variant="h3" className="title">
+        <Typography variant="h3" className="title" fontWeight="bold">
           ÁREA DE ATUAÇÃO
         </Typography>
       </Grid2>
-
       <Grid2 size={{ xs: 12, md: 4 }} mt={4} className="activityCard">
         <CodeOffIcon className="icon" fontSize="50px" />
         <Typography variant="h5" color="white" fontWeight="bold">
@@ -26,7 +25,6 @@ const WorkingArea = () => {
           indispensável na era digital.
         </Typography>
       </Grid2>
-
       <Grid2 size={{ xs: 12, md: 4 }} mt={4} className="activityCard">
         <DataObjectIcon className="icon" fontSize="50px" />
         <Typography variant="h5" color="white" fontWeight="bold">
@@ -39,7 +37,6 @@ const WorkingArea = () => {
           indispensável na era digital.
         </Typography>
       </Grid2>
-
       <Grid2 size={{ xs: 12, md: 4 }} mt={4} className="activityCard">
         <CloudIcon className="icon" fontSize="50px" />
         <Typography variant="h5" color="white" fontWeight="bold">
