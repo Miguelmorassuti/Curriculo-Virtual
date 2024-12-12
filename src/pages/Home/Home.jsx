@@ -32,7 +32,7 @@ const Home = () => {
             </Link>
           </Grid2>
           <Grid2 item size={{ xs: 6, md: 3 }}>
-            <Link href="skills" underline="none">
+            <Link href="#skills" underline="none">
               <Typography variant="h6" className="navigationButton">
                 HABILIDADES
               </Typography>
