@@ -2,7 +2,9 @@
 
 **Bem-vindo ao repositório do meu Currículo Virtual**, um projeto desenvolvido em React 18.3.1. Este é um site pessoal para apresentar minhas experiências, formação e habilidades de forma interativa e moderna.
 
-**Acesse o site:** https://miguelmorassuti.github.io/Curriculo-Virtual/
+**Acesse o site:** 
+
+https://miguelmorassuti.github.io/Curriculo-Virtual/
 
 ### Tecnologias Utilizadas
 
